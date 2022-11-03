@@ -8,24 +8,33 @@
 :root {
   font-size: 62.5%;
 
-  --blue: #338af3;
-  --yellow: #f7dd43;
-  --grey: #202024;
+  --bg: url(./assets/bg-blue.svg);
+
+  --card-border-color: #f7dd43;
+  --card-text-border-color: #746615;
+  --card-bg-color: #1d1c19;
+
   --light-grey: #323238;
   --text-color: #e1e1e6;
+}
+
+body.blue {
+  --card-border-color: #338af3;
+  --card-text-border-color: #338af3;
+  --card-bg-color: #202024;
+}
+
+body.green {
+  --card-border-color: #047c3f;
+  --card-text-border-color: #047c3f;
+  --card-bg-color: #1a1f1b;
+  --bg: url(./assets/bg-green.svg);
 }
 
 body {
   font-size: 1.6rem;
 
-  /* background-image: url(./assets/bg.svg);
-  background-size: center;
-  background-position-y: 70%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #121214; */
-  background: linear-gradient(180deg, #192a41 25%, #121214 100%);
-  height: 100%;
+  background: #121214 var(--bg) no-repeat top center/cover;
 }
 
 ul {
@@ -34,7 +43,8 @@ ul {
 
 #app {
   width: fit-content;
-  margin: 0 auto 11rem;
+  margin: 0 auto;
+  padding-bottom: 11rem;
 }
 
 header {
@@ -51,18 +61,18 @@ header {
 }
 
 .card {
-  background: var(--grey);
+  background: var(--card-bg-color);
   color: #ffffff;
 
   text-align: center;
   padding: 3.2rem 2.4rem;
 
   border-radius: 0.6rem;
-  border-bottom: 2px solid var(--blue);
+  border-bottom: 2px solid var(--card-border-color);
 }
 
 .card h2 {
-  color: var(--yellow);
+  color: #f7dd43;
   font-size: 2.4rem;
 
   display: flex;
@@ -73,7 +83,7 @@ header {
   padding: 0.8rem 1.6rem;
   margin: 0 auto 5.2rem;
 
-  border: 1px solid var(--blue);
+  border: 1px solid var(--card-text-border-color);
   border-radius: 0.6rem;
 }
 
@@ -132,5 +142,13 @@ header {
 
   100% {
     opacity: 1;
+  }
+}
+
+@media (min-width: 760px) {
+  .cards {
+    max-width: 67rem;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
