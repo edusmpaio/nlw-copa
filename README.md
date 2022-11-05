@@ -32,6 +32,8 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 O Calendário de Jogos é um projeto que mostra as datas, os times e os horários que acontencerão os jogos da Copa do Mundo de 2022.
 
+🔗 [Clique aqui](https://edusmpaio.github.io/nlw-copa-explorer/) para acessar o projeto.
+
 ## 🔖 Layout
 
 Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/community/file/1169028052212317700). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
