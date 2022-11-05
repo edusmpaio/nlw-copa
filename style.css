@@ -8,7 +8,7 @@
 :root {
   font-size: 62.5%;
 
-  --bg: url(./assets/bg-blue.svg);
+  --bg: linear-gradient(180deg, #192a41 25%, #121214 100%);
 
   --card-border-color: #f7dd43;
   --card-text-border-color: #746615;
@@ -28,13 +28,14 @@ body.green {
   --card-border-color: #047c3f;
   --card-text-border-color: #047c3f;
   --card-bg-color: #1a1f1b;
-  --bg: url(./assets/bg-green.svg);
+  --bg: linear-gradient(180deg, #192922 25%, #121214 100%);
 }
 
 body {
   font-size: 1.6rem;
 
-  background: #121214 var(--bg) no-repeat top center/cover;
+  background: var(--bg);
+  height: 100%;
 }
 
 ul {
